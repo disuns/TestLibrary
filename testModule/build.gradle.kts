@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.disun.testmodule"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 21
@@ -29,7 +29,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
 }
 
@@ -50,7 +50,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.myname"
                 artifactId = "TestLibrary"
-                version = "1.0.0"
+                version = "1.0.1"
             }
         }
     }
